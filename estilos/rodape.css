@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.rodape {
+    border-top: 1px solid var(--cor-secundaria);
+}
+
+.rodape__texto {
+    font-weight: 400;
+    color: var(--cor-preto);
+    padding: 1em 2em;
+}
