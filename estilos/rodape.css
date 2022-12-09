@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Versão MOBILE */
+
 .rodape {
     background-color: var(--cor-branco);
     border-top: 1px solid var(--cor-secundaria);
@@ -13,6 +15,8 @@
 .rodape__lista {
     display: none;
 }
+
+/* Versão TABLET */
 
 @media screen and (min-width: 1024px) {
     
@@ -47,5 +51,19 @@
     .rodape__lista--link {
         text-decoration: none;
         margin-left: .6em;
+    }
+}
+
+/* Versão GRANDES TELAS */
+
+@media screen and (min-width: 1728px) {
+
+    .rodape {
+        padding: 3em 0;
+    }
+    
+    .rodape__lista {
+        border-left: 1px solid var(--cor-secundaria);
+        padding-left: 1em;
     }
 }

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Versão MOBILE */
+
 .banner {
     background: var(--cor-azul-degrade);
     color: var(--cor-branco);
@@ -36,6 +38,8 @@
     background-position: .6em;
 }
 
+/* Versão TABLET */
+
 @media screen and (min-width: 1024px) {
     .banner__titulo {
         font-size: 36px;
@@ -47,5 +51,21 @@
 
     .banner__pesquisa::placeholder {
         background-position: 6em;
+    }
+}
+
+/* Versão GRANDES TELAS */
+
+@media screen and (min-width: 1728px) {
+
+    .banner {
+        padding: 6em;
+    }
+    .banner__pesquisa {
+        width: 30%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 8em;
     }
 }

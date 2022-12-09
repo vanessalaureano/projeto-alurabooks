@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Versão MOBILE */
+
 .contato {
     background-color: var(--cor-branco);
     padding: 1em;
@@ -35,6 +37,8 @@
     background-color: var(--cor-azul-degrade);
 }
 
+/* Versão TABLET */
+
 @media screen and (min-width: 1024px) {
     
     .contato {
@@ -54,5 +58,14 @@
     .contato_descricao {
         margin-right: 1em;
         width: 30%;
+    }
+}
+
+/* Versão GRANDES TELAS */
+
+@media screen and (min-width: 1728px) {
+
+    .contato {
+        padding: 3em 20vw;
     }
 }

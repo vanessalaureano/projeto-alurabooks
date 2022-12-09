@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Versão MOBILE */
+
 .topicos {
     background: var(--cor-azul-degrade);
     text-align: center;
@@ -32,6 +34,8 @@
     font-weight: 700;
 }
 
+/* Versão TABLET */
+
 @media screen and (min-width: 1024px) {
 
     .topicos__titulo {
@@ -40,5 +44,14 @@
 
     .topicos__link {
         font-size: 24px;
+    }
+}
+
+/* Versão GRANDES TELAS */
+
+@media screen and (min-width: 1728px) {
+
+    .topicos {
+        padding: 2em 30vw;
     }
 }
