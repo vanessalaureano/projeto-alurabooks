@@ -9,3 +9,43 @@
     color: var(--cor-preto);
     padding: 1em 2em;
 }
+
+.rodape__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0;
+    }
+    
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
+    .rodape__lista {
+        display: block;
+        font-size: 14px;
+    }
+
+    .rodape__lista--titulo {
+        text-transform: uppercase;
+        color: var(--cor-secundaria);
+        padding-bottom: 1em;
+    }
+
+    .rodape__lista--item {
+        display: flex;
+        align-items: center;
+        margin: .6em 0;
+        color: var(--cor-cinza);
+    }
+
+    .rodape__lista--link {
+        text-decoration: none;
+        margin-left: .6em;
+    }
+}
